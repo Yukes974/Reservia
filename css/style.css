@@ -1,3 +1,58 @@
 * {
     font-family: "Raleway", sans-serif;
 }
+
+div {
+    border: 1px solid black;
+}
+
+h1 {
+    border: 1px solid violet;
+}
+
+section {
+    display:flex;
+    justify-content:space-between;
+}
+
+#conteneur_heb_marseille {
+    width: 50%;
+    flex-direction: column;
+}
+
+#conteneur_plus_populaires {
+    width: 50%;
+    flex-direction: column;
+}
+
+#conteneur_act_marseille {
+    width: 100%;
+    flex-direction: column;
+}
+
+#img_heb_marseille {
+    display: flex;
+    justify-content: space-around;
+}
+
+#img_plus_populaires {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img_pop {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 400px;
+}
+
+#img_act_marseille {
+    display:flex;
+    justify-content: space-between;
+}
