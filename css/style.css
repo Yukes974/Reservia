@@ -16,7 +16,7 @@ section {
 }
 
 #conteneur_heb_marseille {
-    width: 50%;
+
     flex-direction: column;
 }
 
@@ -30,9 +30,10 @@ section {
     flex-direction: column;
 }
 
-#img_heb_marseille {
+#bloc_img_heb_marseille {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #img_plus_populaires {
@@ -43,9 +44,26 @@ section {
     margin-bottom: 20px;
 }
 
-.img_pop {
+.img_heb_marseille {
+    width: 237px;
+    height: 114px;
+}
+
+.img_heb_marseille p a img {
+    width: 237px;
+    height: 114px;
+}
+
+.bloc_img_pop {
     display: flex;
     flex-direction: row;
+    width: 350px;
+    height: 150px;
+}
+
+.img_pop p a img {
+    width: 128px;
+    height: 135px;
 }
 
 img {
