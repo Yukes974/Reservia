@@ -18,23 +18,28 @@ h1 {
 
 section {
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
 }
 
 #conteneur_heb_marseille {
+    display: flex;
     width: 880px;
     flex-direction: column;
+    background-color: #F2F2F2;
 }
 
 #bloc_center_heb_marseille {
+    display: flex;
+    flex-direction: column;
     width: 801px;
-    height: 537px;
     margin: auto;
 }
 
 #conteneur_plus_populaires {
+    display: flex;
     width: 419px;
     height: 619px;
+    background-color: #F2F2F2;
 }
 
 #conteneur_act_marseille {
@@ -52,8 +57,6 @@ section {
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 #bloc_center_pop {
@@ -82,14 +85,21 @@ section {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 186px;
+}
+
+.text_star div p {
+    word-wrap: wrap;
 }
 
 .bloc_img_pop {
     display: flex;
     flex-direction: row;
-    width: 350px;
-    height: 150px;
+    width: 344px;
+    height: 144px;
     justify-content: center;
+    border: 5px solid white;
+    border-radius: 20px;
 }
 
 .img_pop p a img {
@@ -104,4 +114,13 @@ img {
 #img_act_marseille {
     display:flex;
     justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+footer div {
+    width: 33%;
 }
