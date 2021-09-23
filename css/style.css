@@ -10,15 +10,47 @@ h1 {
     border: 1px solid violet;
 }
 
+p {
+    border: 1px solid red;
+}
+
 #bloc_page {
     width: 1437px;
     height: 1881px;
     margin: auto;
 }
 
+#container_logo_nav {
+    display: flex;
+}
+
+#logo {
+    width: 50%;
+
+}
+
+#logo p img {
+    width: 94px;
+    height: 25px;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.menu ul li {
+    padding-left: 68px;
+}
+
 section {
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 
 #conteneur_heb_marseille {
@@ -114,6 +146,16 @@ img {
 #img_act_marseille {
     display:flex;
     justify-content: space-between;
+}
+
+.img_bloc_act_marseille_1 a figure img {
+    width: 250px;
+    height: 388px;
+}
+
+.img_bloc_act_marseille_2 a figure img {
+    width: 250px;
+    height: 178px;
 }
 
 footer {
