@@ -18,9 +18,13 @@ p {
     border: 1px solid red;
 }
 
+aside {
+    border: 1px solid green;
+}
+
 /* Pour pouvoir centrer la page par rapport à sa largeur et hauteur */
 
-#bloc_page {
+div#bloc_page {
     width: 1437px;
     height: 1881px;
     margin: auto;
@@ -28,32 +32,32 @@ p {
 
 /* Bloc contenant le logo et le nav */
 
-#container_logo_nav {
+div#container_logo_nav {
     display: flex;
 }
 
 /* Bloc contenant le logo */
 
-#logo {
+div#logo {
     width: 50%;
 }
 
 /* Taille du logo */
 
-#logo p img {
+div#logo p img {
     width: 94px;
     height: 25px;
 }
 
 /* Le menu du nav */
 
-.menu {
+nav.menu {
     width: 50%;
 }
 
 /* Comportement et disposition des éléments du nav */
 
-.menu ul {
+nav.menu ul {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
@@ -61,13 +65,13 @@ p {
 
 /* Les élément du menu nav ont un espace vers la gauche */
 
-.menu ul li {
+nav.menu ul li {
     padding-left: 68px;
 }
 
 /* Barre de recherche */
 
-#search {
+div#search {
     display: flex;
 }
 
@@ -79,14 +83,14 @@ form {
 
 /* Les éléments du filtre sont centrés */
 
-#filtres {
+div#filtres {
     display: flex;
     align-items: center;
 }
 
 /* L'îcone et le nom du filtre soient ajencés côte à côte */
 
-#filtres div {
+div#filtres div {
     display: flex;
 }
 
@@ -99,7 +103,7 @@ section {
 
 /* Conteneur "Hébergements à Marseille dont la couleur de fond est grisée */
 
-#conteneur_heb_marseille {
+div#conteneur_heb_marseille {
     display: flex;
     width: 880px;
     background-color: #F2F2F2;
@@ -107,7 +111,7 @@ section {
 
 /* Les blocs contenant le titre les images et leur intitulé sont centrés et disposés en colonne à l'intérieur du conteneur "Hébergements à Marseille" */
 
-#bloc_center_heb_marseille {
+div#bloc_center_heb_marseille {
     display: flex;
     flex-direction: column;
     width: 801px;
@@ -116,7 +120,7 @@ section {
 
 /* Conteneur "Les plus populaires" dont la couleur de fond est grisée */
 
-#conteneur_plus_populaires {
+aside#conteneur_plus_populaires {
     display: flex;
     width: 419px;
     height: 619px;
@@ -125,7 +129,7 @@ section {
 
 /* Bloc centrant tous les éléments dans le conteneur "Les plus populaires */
 
-#bloc_center_pop {
+div#bloc_center_pop {
     width: 343px;
     height: 549px;
     margin: auto;
@@ -133,14 +137,14 @@ section {
 
 /* Conteneur "Activités à Marseille" qui est étendue à 100% de la page et dont les éléments sont positionnés en colonne */
 
-#conteneur_act_marseille {
+section#conteneur_act_marseille {
     width: 100%;
     flex-direction: column;
 }
 
 /* Bloc contenant les blocs qui contiennent les images et leur intitulé qui ont des espaces autour d'eux et qui vont à la ligne lorsqu'ils arrivent à la limite du bloc. A l'intérieur du conteneur "Hébergements à Marseille" */
 
-#bloc_img_heb_marseille {
+div#bloc_img_heb_marseille {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -148,7 +152,7 @@ section {
 
 /* Bloc contenant les blocs qui contiennent les images et leur intitulé qui sont en colonne et centrés. A l'intérieur du conteneur "Les plus populaires" */
 
-#img_plus_populaires {
+div#img_plus_populaires {
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -156,7 +160,7 @@ section {
 
 /* Pour mettre le titre "Les plus populaires" à gauche et l'îcone "graph" à droite. Tous les deux étant également centré en axe verticale  */
 
-#title_graph {
+div#titre_graph {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -164,21 +168,21 @@ section {
 
 /* Dimension du bloc contenant l'image dans le conteneur "Hébergements à Marseille */
 
-.img_heb_marseille {
+div.img_heb_marseille {
     width: 237px;
     height: 114px;
 }
 
 /* Dimension des images dans le conteneur "Hébergements à Marseille */
 
-.img_heb_marseille p a img {
+div.img_heb_marseille p a img {
     width: 237px;
     height: 114px;
 }
 
 /* Disposition des intitulés et des étoiles dans le conteneur "Les plus populaires". En colonne et séparé par un espace */
 
-.text_star {
+div.text_star {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -187,13 +191,13 @@ section {
 
 /* Les mots passent à la ligne quand ils arrivent à la limite du bloc dans le conteneur "Les plus populaires" */
 
-.text_star div p {
+div.text_star div p {
     word-wrap: wrap;
 }
 
 /* Les blocs contenant les images et leur intitulé. L'image à gauche, l'intitulé et les étoiles à droite de l'image. Ils sont centrés. Ils sont tous dans le conteneur "Les plus populaires" */
 
-.bloc_img_pop {
+div.bloc_img_pop {
     display: flex;
     width: 344px;
     height: 144px;
@@ -204,28 +208,28 @@ section {
 
 /* Taille des images dans le conteneur "Les plus populaires" */
 
-.img_pop p a img {
+div.img_pop p a img {
     width: 128px;
     height: 135px;
 }
 
 /* Bloc contenant tous les blocs qui contiennent les figures dans le conteneur "Activités à Marseille". Les blocs ont des espaces entres eux */
 
-#img_act_marseille {
+div#img_act_marseille {
     display:flex;
     justify-content: space-between;
 }
 
 /* Les blocs contenant une seule figure à l'intérieur. Ils sont dans le conteneur "Activités à Marseille" */
 
-.img_bloc_act_marseille_1 a figure img {
+div.img_bloc_act_marseille_1 a figure img {
     width: 250px;
     height: 388px;
 }
 
 /* Les blocs contenant deux figures à l'intérieur. Ils sont dans le conteneur "Activités à Marseille" */
 
-.img_bloc_act_marseille_2 a figure img {
+div.img_bloc_act_marseille_2 a figure img {
     width: 250px;
     height: 178px;
 }
@@ -237,7 +241,7 @@ footer {
     flex-direction: row;
 }
 
-/* Le pied de page s'étend à 99% de largeur de la page */
+/* Les éléments du pied de page s'étend à 99% de largeur de la page */
 
 footer div {
     width: 33%;
