@@ -246,3 +246,70 @@ footer {
 footer div {
     width: 33%;
 }
+
+/* Responsiv pour les mobiles */
+
+@media all and (max-device-width: 480px) {
+    div#bloc_page {
+        width: 375px;
+    }
+
+    div#container_logo_nav {
+        flex-direction: column;
+    }
+
+    div#logo {
+        width: auto;
+    }
+
+    nav.menu {
+        width: auto;
+    }
+
+    div#filtres {
+        flex-wrap: wrap;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    div#conteneur_heb_marseille {
+        width: auto;
+    }
+
+    div#bloc_center_heb_marseille {
+        width: auto;
+    }
+
+    div.img_heb_marseille {
+        width: 325px;
+    }
+
+    div.img_heb_marseille p a img {
+        width: 325px;
+    }
+
+    aside#conteneur_plus_populaires {
+        width: auto;
+    }
+
+    section#conteneur_act_marseille {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div#img_act_marseille {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer div {
+        width: auto;
+    }
+}
