@@ -36,7 +36,7 @@ div#bloc_page {
 
 /* Bloc contenant le logo et le nav */
 
-div#container_logo_nav {
+div#conteneur_logo_nav {
     display: flex;
 }
 
@@ -121,7 +121,7 @@ div#conteneur_heb_marseille {
 
 /* Les blocs contenant le titre les images et leur intitulé sont centrés et disposés en colonne à l'intérieur du conteneur "Hébergements à Marseille" */
 
-div#bloc_center_heb_marseille {
+div#bloc_centrer_heb_marseille {
     display: flex;
     flex-direction: column;
     width: 801px;
@@ -139,7 +139,7 @@ aside#conteneur_plus_populaires {
 
 /* Bloc centrant tous les éléments dans le conteneur "Les plus populaires */
 
-div#bloc_center_pop {
+div#bloc_centrer_pop {
     width: 343px;
     height: 549px;
     margin: auto;
@@ -192,7 +192,7 @@ div.img_heb_marseille p a img {
 
 /* Disposition des intitulés et des étoiles dans le conteneur "Les plus populaires". En colonne et séparé par un espace */
 
-div.text_star {
+div.text_etoile {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -201,7 +201,7 @@ div.text_star {
 
 /* Les mots passent à la ligne quand ils arrivent à la limite du bloc dans le conteneur "Les plus populaires" */
 
-div.text_star div p {
+div.text_etoile div p {
     word-wrap: wrap;
 }
 
@@ -264,7 +264,7 @@ footer div {
         width: 375px;
     }
 
-    div#container_logo_nav {
+    div#conteneur_logo_nav {
         flex-direction: column;
     }
 
@@ -306,7 +306,7 @@ footer div {
         width: auto;
     }
 
-    div#bloc_center_heb_marseille {
+    div#bloc_centrer_heb_marseille {
         width: auto;
     }
 
