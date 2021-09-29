@@ -22,6 +22,10 @@ aside {
     border: 1px solid green;
 }
 
+nav {
+    border: 1px solid blue;
+}
+
 /* Pour pouvoir centrer la page par rapport à sa largeur et hauteur */
 
 div#bloc_page {
@@ -60,18 +64,24 @@ nav.menu {
 nav.menu ul {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     list-style-type: none;
 }
 
 /* Les élément du menu nav ont un espace vers la gauche */
 
 nav.menu ul li {
-    padding-left: 68px;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+div#inscrire p {
+    padding-left: 34px;
 }
 
 /* Barre de recherche */
 
-div#search {
+div#rechercher {
     display: flex;
 }
 
@@ -263,7 +273,24 @@ footer div {
     }
 
     nav.menu {
+        display: flex;
         width: auto;
+    }
+
+    nav.menu ul {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    nav.menu ul li {
+        padding: 0px 50px 0px 50px;
+    }
+
+    div#inscrire p{
+        position: absolute;
+        padding-left: 0px;        
+        left: 600px;
+        bottom: 1670px;
     }
 
     div#filtres {
