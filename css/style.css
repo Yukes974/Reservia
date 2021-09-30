@@ -71,11 +71,13 @@ nav.menu ul {
 /* Les élément du menu nav ont un espace vers la gauche */
 
 nav.menu ul li {
-    padding-left: 34px;
     padding-right: 34px;
 }
 
 div#inscrire p {
+}
+
+.marge_int_gauche_34px {
     padding-left: 34px;
 }
 
@@ -156,7 +158,7 @@ section#conteneur_act_marseille {
 
 div#bloc_img_heb_marseille {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -176,18 +178,15 @@ div#titre_graph {
     align-items: center;
 }
 
-/* Dimension du bloc contenant l'image dans le conteneur "Hébergements à Marseille */
+/* Dimension de l'image dans le conteneur "Hébergements à Marseille */
 
-div.img_heb_marseille {
+div.dim_bloc_img_texte_etoile_heb_marseille a figure img {
     width: 237px;
     height: 114px;
 }
 
-/* Dimension des images dans le conteneur "Hébergements à Marseille */
-
-div.img_heb_marseille p a img {
-    width: 237px;
-    height: 114px;
+div.dim_bloc_img_texte_etoile_heb_marseille a figure {
+    margin: 0px;
 }
 
 /* Disposition des intitulés et des étoiles dans le conteneur "Les plus populaires". En colonne et séparé par un espace */
@@ -202,7 +201,7 @@ div.text_etoile {
 /* Les mots passent à la ligne quand ils arrivent à la limite du bloc dans le conteneur "Les plus populaires" */
 
 div.text_etoile div p {
-    word-wrap: wrap;
+    word-wrap: break-word;
 }
 
 /* Les blocs contenant les images et leur intitulé. L'image à gauche, l'intitulé et les étoiles à droite de l'image. Ils sont centrés. Ils sont tous dans le conteneur "Les plus populaires" */
@@ -233,15 +232,17 @@ div#img_act_marseille {
 /* Les blocs contenant une seule figure à l'intérieur. Ils sont dans le conteneur "Activités à Marseille" */
 
 div.img_bloc_act_marseille_1 a figure img {
-    width: 250px;
     height: 388px;
 }
 
 /* Les blocs contenant deux figures à l'intérieur. Ils sont dans le conteneur "Activités à Marseille" */
 
 div.img_bloc_act_marseille_2 a figure img {
-    width: 250px;
     height: 178px;
+}
+
+.largeur_250px {
+    width: 250px;
 }
 
 /* Les éléments du pied de page sont alignés */
@@ -310,11 +311,19 @@ footer div {
         width: auto;
     }
 
+    div#bloc_img_heb_marseille {
+        justify-content: center;
+    }
+
     div.img_heb_marseille {
         width: 325px;
     }
 
-    div.img_heb_marseille p a img {
+    div.dim_bloc_img_texte_etoile_heb_marseille a figure img {
+        width: 325px;
+    }
+
+    .largeur_325px {
         width: 325px;
     }
 
